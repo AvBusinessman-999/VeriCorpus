@@ -1,8 +1,22 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+svg {
+  display: block;
+  max-width: 100%;
+}
+
 body {
   background-color: #0b0f19;
   color: #f8fafc;
   font-family: system-ui, sans-serif;
   padding: 2rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 .brand {
@@ -51,3 +65,48 @@ td {
   color: slategray;
 }
 
+.hero {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1.15;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  margin-top: 1rem;
+  color: #94a3b8; 
+  max-width: 650px;
+  margin: 1.25rem 0 2rem;
+}
+
+.cta-btn {
+  padding: 0.85em 1.75em;
+  background-color: #10b981; /* Emerald Green */
+  color: #0b0f19; /* Dark background color */
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cta-btn:hover {
+  background-color: #34d399;
+  transform: translateY(-2px);
+}
+
+.comparison-table caption {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
