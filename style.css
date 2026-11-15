@@ -25,3 +25,29 @@ body {
   color: #34d399;
   transform: scale(1.1);
 }
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.highlight {
+  color: #10b981; /* Emerald Green */
+  font-weight: bold;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #1f2937;
+}
+
+.comparison-section {
+  max-width: 900px;
+  margin: 4rem auto;
+}
+
+td {
+  color: slategray;
+}
+
