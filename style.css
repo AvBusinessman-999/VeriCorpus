@@ -138,3 +138,26 @@ td {
   color:#34d399;
   text-shadow: 0 0 14px rgba(16, 185, 129, 0.7);
 }
+
+::selection {
+  background-color: #10b981;
+  color:#0b0f19;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.comparison-table tbody tr:last-child td, .comparison-table tbody tr:last-child th {
+  border-bottom: none;
+}
+
+.badge::before {
+  content: "";
+  display: inline-block;
+  width : 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right : 0.5rem;
+  background-color: #10b281;
+}
