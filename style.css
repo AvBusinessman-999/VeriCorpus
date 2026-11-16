@@ -13,7 +13,7 @@ svg {
 body {
   background-color: #0b0f19;
   color: #f8fafc;
-  font-family: system-ui, sans-serif;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
   padding: 2rem;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -43,6 +43,10 @@ body {
 .comparison-table {
   width: 100%;
   border-collapse: collapse;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 
 .highlight {
@@ -78,6 +82,9 @@ td {
 .hero h1 {
   font-size: 3rem;
   line-height: 1.15;
+  letter-spacing: -0.03em;
+  text-shadow: 0 4px 24px rgba(16, 185, 129, 0.15) ;
+  text-align: center;
 }
 
 .hero p {
@@ -97,11 +104,13 @@ td {
   font-weight: 700;
   display: inline-block;
   transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
 }
 
 .cta-btn:hover {
   background-color: #34d399;
   transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(16, 185, 129, 0.5);
 }
 
 .comparison-table caption {
@@ -109,4 +118,23 @@ td {
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
+}
+
+.badge {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #10b281;
+  margin-bottom: 0.75rem;
+  background-color: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+}
+
+.badge:hover {
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+  color:#34d399;
+  text-shadow: 0 0 14px rgba(16, 185, 129, 0.7);
 }
