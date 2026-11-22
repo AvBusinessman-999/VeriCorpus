@@ -32,17 +32,45 @@ const sampleDatasets = {
     "ruling": "ITC is strictly BLOCKED for motor vehicles with seating capacity <= 13 persons unless used for further supply, passenger transport, or driving training.",
     "auditor": "CA Intermediate Qualified | Dual-QA Approved"
   }
+}`,
+  da: `{
+  "task_id": "VC-DA-0904",
+  "domain": "Enterprise Data Schema & IAA Quality Audit",
+  "batch_metrics": {
+    "total_rows_audited": 1000,
+    "cohens_kappa_iaa": 0.964,
+    "schema_validation_pass_rate": "99.8%",
+    "rejected_anomalies_caught": 14
+  },
+  "qa_verdict": {
+    "status": "RELEASE_APPROVED",
+    "pipeline": "Dual-Annotator Blind Review + Deterministic JSONL Linter",
+    "auditor": "Senior Data Analyst (Enterprise QA Lead)"
+  }
 }`
 };
 
 const tabButtons = document.querySelectorAll('.tab-btn');
 const sampleCode = document.getElementById('sample-code');
+const sampleLinks = document.querySelectorAll('.sample-link');
+
+function activatePod(pod) {
+  if (!sampleDatasets[pod]) return;
+  tabButtons.forEach((btn) => {
+    btn.classList.toggle('active', btn.getAttribute('data-pod') === pod);
+  });
+  sampleCode.textContent = sampleDatasets[pod];
+}
 
 tabButtons.forEach((btn) => {
   btn.addEventListener('click', () => {
-    tabButtons.forEach((b) => b.classList.remove('active'));
-    btn.classList.add('active');
-    const pod = btn.getAttribute('data-pod');
-    sampleCode.textContent = sampleDatasets[pod];
+    activatePod(btn.getAttribute('data-pod'));
   });
 });
+
+sampleLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    activatePod(link.getAttribute('data-pod'));
+  });
+});
+

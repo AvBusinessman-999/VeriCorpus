@@ -99,7 +99,7 @@
         <h3>Senior Clinical Pharmacist Lead</h3>
         <p class="creds">• Registered Pharmacist (State Pharmacy Council) | B.Pharm</p>
         <p class="focus">Medication interactions, Indian brand-to-salt mapping, dosage validation, and Hinglish patient triage.</p>
-        <a href="#samples" class="sample-link">View Sample Dataset &rarr;</a>
+        <a href="#samples" class="sample-link" data-pod="rx">View Sample Dataset &rarr;</a>
       </article>
       <article class="expert-card">
         <span class="verified-tag">Verified Credential</span>
@@ -107,7 +107,7 @@
         <h3>Dental & Maxillofacial Specialist</h3>
         <p class="creds">• B.D.S., M.I.D.A. | Practicing Dental Surgeon (5+ Yrs Clinical Exp.)</p>
         <p class="focus">Handwritten prescription/chart OCR, dental quadrant notation, surgical triage, and radiograph labeling.</p>
-        <a href="#samples" class="sample-link">View Sample Dataset &rarr;</a>
+        <a href="#samples" class="sample-link" data-pod="bds">View Sample Dataset &rarr;</a>
       </article>
       <article class="expert-card">
         <span class="verified-tag">Verified Credential</span>
@@ -115,7 +115,7 @@
         <h3>Financial & Regulatory Reasoning Specialist</h3>
         <p class="creds">• CA Intermediate Qualified | Audit & Tax Associate</p>
         <p class="focus">GST Input Tax Credit (ITC) edge cases, NBFC compliance guardrails, financial statement extraction, and arithmetic verification.</p>
-        <a href="#samples" class="sample-link">View Sample Dataset &rarr;</a>
+        <a href="#samples" class="sample-link" data-pod="ca">View Sample Dataset &rarr;</a>
       </article>
       <article class="expert-card">
         <span class="verified-tag">Verified Credential</span>
@@ -123,7 +123,7 @@
         <h3>Data Enginneering & QA Advisor</h3>
         <p class="creds">• Senior Data Analyst (Tier-1 IT Consulting Background)</p>
         <p class="focus">Inter-annotator agreement (IAA) scoring, JSON/CSV schema validation, and multi-tier pipeline quality assurance.</p>
-        <a href="#samples" class="sample-link">View Sample Dataset &rarr;</a>
+        <a href="#samples" class="sample-link" data-pod="da">View Sample Dataset &rarr;</a>
       </article>
       </div>
     </section>
@@ -139,6 +139,7 @@
         <button type="button" class="tab-btn active" data-pod="rx">Rx Clinical Safety</button>
         <button type="button" class="tab-btn" data-pod="bds">BDS Dental OCR</button>
         <button type="button" class="tab-btn" data-pod="ca">CA Tax &amp; GST</button>
+        <button type="button" class="tab-btn" data-pod="da">DA Data &amp; QA</button>
       </div>
       <span class="qa-badge">IAA Score: 99.4% &bull; JSONL</span>
     </div>
@@ -157,6 +158,81 @@
 }</code></pre>
   </div>
 </section>
+<section id="pricing" class="pricing-section">
+  <div class="section-header">
+    <span class="section-eyebrow">Transparent Unit Economics</span>
+    <h2>Flexible Pod Engagement Models</h2>
+  </div>
+
+  <div class="pricing-grid">
+    <article class="pricing-card">
+      <h3>20-Row Validation Pilot</h3>
+      <div class="price">$0 <span>/ 48-hr turnaround</span></div>
+      <p class="price-desc">Benchmark our domain accuracy against your current vendor before committing a single dollar.</p>
+      <ul class="price-features">
+        <li>20 custom SFT, RLHF, or red-team rows</li>
+        <li>Verified by credentialed domain specialists</li>
+        <li>Full JSONL schema &amp; error taxonomy report</li>
+      </ul>
+      <a href="#pilot" class="btn-outline">Start Free Pilot</a>
+    </article>
+
+    <article class="pricing-card featured-tier">
+      <span class="popular-badge">Most Popular</span>
+      <h3>Dedicated Sprint Batch</h3>
+      <div class="price">$3,500 <span>/ 1,000 verified rows</span></div>
+      <p class="price-desc">Rapid, fixed-scope dataset production for post-training, fine-tuning, and safety evals.</p>
+      <ul class="price-features">
+        <li>99%+ Inter-Annotator Agreement (IAA) SLA</li>
+        <li>Dual-layer specialist + QA lead sign-off</li>
+        <li>72-hour delivery with strict NDA isolation</li>
+      </ul>
+      <a href="#pilot" class="cta-btn">Scope Sprint Batch</a>
+    </article>
+
+    <article class="pricing-card">
+      <h3>Managed Enterprise Pod</h3>
+      <div class="price">$7,500+ <span>/ month</span></div>
+      <p class="price-desc">Continuous weekly RLHF pipelines and dedicated clinical, tax, or code evaluators.</p>
+      <ul class="price-features">
+        <li>Dedicated multi-domain specialist bench</li>
+        <li>Custom rubric engineering &amp; live Slack channel</li>
+        <li>Priority 24-hour turnaround &amp; IP indemnification</li>
+      </ul>
+      <a href="#pilot" class="btn-outline">Book Pod Allocation</a>
+    </article>
+  </div>
+</section>
+
+<section id="faq" class="faq-section">
+  <div class="section-header">
+    <span class="section-eyebrow">Enterprise Due Diligence</span>
+    <h2>Frequently Asked Questions</h2>
+  </div>
+
+  <div class="faq-list">
+    <details class="faq-item" open>
+      <summary>How do you protect proprietary prompts and model outputs from data leakage?</summary>
+      <p>Every specialist operates under binding non-disclosure agreements inside isolated annotation environments. Client prompts, weights, and rubrics are never pasted into public AI tools or retained after batch delivery.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>How are your Clinical, Dental, and Finance specialists verified?</summary>
+      <p>We verify active statutory credentials before onboarding—including State Pharmacy Council registrations (B.Pharm), Dental Council registrations (B.D.S./M.I.D.A.), and CA Intermediate/audit qualifications—followed by a graded domain calibration test.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>What happens if a batch falls below the 99% QA accuracy threshold?</summary>
+      <p>Every row passes through dual-layer review before delivery. If any delivered rows fail your acceptance rubric, our pod re-annotates and audits the entire affected slice within 24 hours at zero additional cost.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Which dataset formats and schemas do you deliver?</summary>
+      <p>We deliver clean, schema-validated JSONL, Parquet, or CSV files tailored directly to your Hugging Face, OpenAI fine-tuning, or custom RLHF reward-model ingestion pipelines.</p>
+    </details>
+  </div>
+</section>
+
     <section id="pilot" class="pilot-section">
       <h2>Request your free 20-row pilot.</h2>
       <form class="pilot-form" action="#" method="POST">
