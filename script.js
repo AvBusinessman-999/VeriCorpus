@@ -98,3 +98,19 @@ const sampleViewer = {
 
 // Start the object machine
 sampleViewer.init();
+
+
+function Book(title, author, pages, read) {
+  if(!new.target) {
+    throw Error("You must use 'new'");
+  }
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
+  this.read = read;
+}
+
+Book.prototype.info = function() {
+  const status = this.read ? "already read" : "not read yet";
+  return `${this.title} by ${this.author}, ${this.pages} pages, ${status}`;
+}
