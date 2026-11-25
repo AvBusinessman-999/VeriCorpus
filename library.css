@@ -1,0 +1,250 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #0b0f19;
+  color: #f8fafc;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 5%;
+  background-color: rgba(17, 24, 39, 0.85);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #1f2937;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.brand-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background-color: #10b981;
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.7);
+}
+
+.brand h1 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.brand span {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.container {
+  width: min(92%, 1040px);
+  margin: 3.5rem auto;
+}
+
+.section-header {
+  margin-bottom: 2rem;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #10b981;
+  margin-bottom: 0.4rem;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.5rem;
+}
+
+.book-card {
+  background-color: #111827;
+  border: 1px solid #1f2937;
+  border-top: 3px solid #10b981;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.book-card h3 {
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+.book-author {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.book-pages {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+}
+
+.status-badge {
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.7rem;
+  border-radius: 9999px;
+  margin-top: 0.25rem;
+}
+
+.status-badge.read {
+  background-color: rgba(16, 185, 129, 0.14);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+.status-badge.unread {
+  background-color: rgba(245, 158, 11, 0.14);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+.card-actions {
+  margin-top: auto;
+  padding-top: 1rem;
+  display: flex;
+  gap: 0.65rem;
+}
+
+.btn-primary {
+  background-color: #10b981;
+  color: #0b0f19;
+  border: none;
+  border-radius: 8px;
+  padding: 0.65rem 1.2rem;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #34d399;
+}
+
+.btn-toggle, .btn-remove {
+  flex: 1;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-toggle {
+  background-color: #1f2937;
+  color: #f8fafc;
+  border: 1px solid #374151;
+}
+
+.btn-toggle:hover {
+  border-color: #10b981;
+  color: #10b981;
+}
+
+.btn-remove {
+  background-color: rgba(244, 63, 94, 0.1);
+  color: #fb7185;
+  border: 1px solid rgba(244, 63, 94, 0.3);
+}
+
+.btn-remove:hover {
+  background-color: rgba(244, 63, 94, 0.2);
+}
+
+.modal {
+  margin: auto;
+  background-color: #111827;
+  color: #f8fafc;
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  padding: 2rem;
+  width: min(92%, 440px);
+}
+
+.modal::backdrop {
+  background-color: rgba(5, 8, 15, 0.8);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-close {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #cbd5e1;
+}
+
+.form-group input {
+  padding: 0.7rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #1f2937;
+  background-color: #0b0f19;
+  color: #f8fafc;
+  font: inherit;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #10b981;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  cursor: pointer;
+}
+
+.full-width {
+  width: 100%;
+}

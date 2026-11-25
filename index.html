@@ -9,17 +9,23 @@
 <link href="https://googleapis.com" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+
+
   <script src="script.js" defer></script>
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpeg">
 </head>
 <body>
   <header class="navbar">
-    <a href="#" class="brand">
-      <svg class="logo-icon" xmlns="http://w3.org" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-        <path d="m9 12 2 2 4-4"/>
-      </svg>
-      <span>VeriCorpus</span>
-    </a>
+    <a href="index.html" class="brand-logo">
+  <img src="assets/images/logo.jpeg" alt="VeriCorpus Logo" class="nav-logo">
+  <span>VeriCorpus</span>
+</a>
+<div class="nav-links">
+  <a href="#benchmark">Why Us</a>
+  <a href="#samples">Sample Data</a>
+  <a href="#pricing">Pricing</a>
+  <a href="dashboard.html">Live Console</a>
+  <a href="portal.html" class="nav-pill">Join Specialist Pod</a>
   </header>
 
   <main>
@@ -31,6 +37,7 @@
     </section>
 
     <section class="comparison-section">
+      <section id="benchmark" class="comparison-section">
       <h2>VeriCorpus vs. Traditional AI Data Vendors</h2>
       <div class="table-wrapper">
       <table class="comparison-table">
@@ -127,6 +134,38 @@
       </article>
       </div>
     </section>
+<section class="capabilities-section">
+  <div class="section-header">
+    <span class="section-eyebrow">Data Infrastructure</span>
+    <h2>Three Core Post-Training Verticals</h2>
+  </div>
+
+  <div class="capabilities-grid">
+    <article class="cap-card">
+      <img src="assets/images/NLP.jpeg" alt="Unstructured data transformed into verified JSONL matrix">
+      <div class="cap-body">
+        <h3>Unstructured-to-Verified Pipelines</h3>
+        <p>Transforming messy raw prompts, PDFs, and edge cases into deterministic, schema-validated JSONL training sets.</p>
+      </div>
+    </article>
+
+    <article class="cap-card">
+      <img src="assets/images/DNA.jpeg" alt="Clinical and biomedical AI verification">
+      <div class="cap-body">
+        <h3>Clinical &amp; Biomedical Reasoning</h3>
+        <p>Audited by licensed pharmacists and dental surgeons to eliminate contraindication and diagnostic hallucinations.</p>
+      </div>
+    </article>
+
+    <article class="cap-card">
+      <img src="assets/images/MLP.jpeg" alt="Multilingual Indic NLP and voice evaluation">
+      <div class="cap-body">
+        <h3>Multilingual Indic &amp; Multimodal</h3>
+        <p>Native Hindi, Hinglish, and regional domain evaluation for speech, OCR, and culturally grounded LLM safety.</p>
+      </div>
+    </article>
+  </div>
+</section>
     <section id="samples" class="samples-section">
   <div class="section-header">
     <span class="section-eyebrow">Verified Ground Truth</span>
@@ -160,49 +199,51 @@
 </section>
 <section id="pricing" class="pricing-section">
   <div class="section-header">
-    <span class="section-eyebrow">Transparent Unit Economics</span>
+    <span class="section-eyebrow">Engagement Models</span>
     <h2>Flexible Pod Engagement Models</h2>
   </div>
 
   <div class="pricing-grid">
     <article class="pricing-card">
       <h3>20-Row Validation Pilot</h3>
-      <div class="price">$0 <span>/ 48-hr turnaround</span></div>
-      <p class="price-desc">Benchmark our domain accuracy against your current vendor before committing a single dollar.</p>
+      <div class="price">Free Pilot <span>/ 48-hr turnaround</span></div>
+      <p class="price-desc">Benchmark our specialist accuracy against your current vendor before committing a single rupee.</p>
       <ul class="price-features">
         <li>20 custom SFT, RLHF, or red-team rows</li>
-        <li>Verified by credentialed domain specialists</li>
-        <li>Full JSONL schema &amp; error taxonomy report</li>
+        <li>Verified by licensed Indian domain leads</li>
+        <li>Full JSONL schema &amp; hallucination audit</li>
       </ul>
-      <a href="#pilot" class="btn-outline">Start Free Pilot</a>
+      <a href="#pilot" class="btn-outline">Claim Free 20-Row Pilot</a>
     </article>
 
     <article class="pricing-card featured-tier">
       <span class="popular-badge">Most Popular</span>
       <h3>Dedicated Sprint Batch</h3>
-      <div class="price">$3,500 <span>/ 1,000 verified rows</span></div>
+      <div class="price">Custom Scope <span>/ 1,000+ rows</span></div>
       <p class="price-desc">Rapid, fixed-scope dataset production for post-training, fine-tuning, and safety evals.</p>
       <ul class="price-features">
+        <li>Up to 60% lower cost than US/EU data agencies</li>
         <li>99%+ Inter-Annotator Agreement (IAA) SLA</li>
         <li>Dual-layer specialist + QA lead sign-off</li>
         <li>72-hour delivery with strict NDA isolation</li>
       </ul>
-      <a href="#pilot" class="cta-btn">Scope Sprint Batch</a>
+      <a href="#pilot" class="cta-btn">Request Sprint Quote</a>
     </article>
 
     <article class="pricing-card">
       <h3>Managed Enterprise Pod</h3>
-      <div class="price">$7,500+ <span>/ month</span></div>
+      <div class="price">Enterprise SLA <span>/ monthly retainer</span></div>
       <p class="price-desc">Continuous weekly RLHF pipelines and dedicated clinical, tax, or code evaluators.</p>
       <ul class="price-features">
         <li>Dedicated multi-domain specialist bench</li>
-        <li>Custom rubric engineering &amp; live Slack channel</li>
-        <li>Priority 24-hour turnaround &amp; IP indemnification</li>
+        <li>Custom rubric engineering &amp; Slack war-room</li>
+        <li>Priority 24-hour SLA &amp; full IP indemnification</li>
       </ul>
       <a href="#pilot" class="btn-outline">Book Pod Allocation</a>
     </article>
   </div>
 </section>
+
 
 <section id="faq" class="faq-section">
   <div class="section-header">

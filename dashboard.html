@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeriCorpus | Operations Command Dashboard</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <h2>VeriCorpus</h2>
+    </div>
+
+    <nav class="nav-group">
+      <a href="#" class="active">Dashboard</a>
+      <a href="#">Active Sprints</a>
+      <a href="#">Sample Datasets</a>
+      <a href="#">Specialist Pods</a>
+      <a href="#">QA Audits</a>
+      <a href="#">Billing &amp; SLAs</a>
+    </nav>
+
+    <nav class="nav-group nav-bottom">
+      <a href="#">Settings</a>
+      <a href="#">Security &amp; NDA</a>
+      <a href="#">Support</a>
+    </nav>
+  </aside>
+
+  <header class="header">
+    <div class="header-top">
+      <input type="search" class="search-bar" placeholder="Search datasets, specialist pods, or batch IDs...">
+      <div class="user-profile">
+        <span class="status-pill">99.2% SLA Live</span>
+        <strong>Aditya V.</strong>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="greeting">
+        <p>Operations Command Center</p>
+        <h1>Welcome back, Aditya (@AvBusinessman)</h1>
+      </div>
+      <div class="header-actions">
+        <button class="btn-primary">New Sprint</button>
+        <button class="btn-secondary">Upload Schema</button>
+        <button class="btn-secondary">Export QA</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="projects-section">
+      <h3>Active Dataset Sprints</h3>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h4>Clinical Polypharmacy SFT</h4>
+          <p>500 multi-drug interaction prompts audited by State-registered pharmacists with Indian brand-to-salt mapping.</p>
+          <span class="card-tag">Rx Pod &bull; 99.4% IAA</span>
+        </article>
+
+        <article class="project-card">
+          <h4>Dental &amp; Surgical Chart OCR</h4>
+          <p>Multimodal ground-truth rubrics for handwritten clinical notation, quadrant charting, and surgical triage.</p>
+          <span class="card-tag">BDS Pod &bull; In QA</span>
+        </article>
+
+        <article class="project-card">
+          <h4>GST ITC Compliance Guardrails</h4>
+          <p>Red-teaming financial reasoning agents on Indian statutory exceptions, NBFC rules, and tax arithmetic.</p>
+          <span class="card-tag">CA Pod &bull; Delivered</span>
+        </article>
+
+        <article class="project-card">
+          <h4>Hinglish Healthcare Triage RLHF</h4>
+          <p>Preference ranking across 1,200 bilingual patient queries to eliminate dosage hallucinations in Indic LLMs.</p>
+          <span class="card-tag">Indic Pod &bull; Active</span>
+        </article>
+
+        <article class="project-card">
+          <h4>SQL &amp; Python Eval Benchmark</h4>
+          <p>Deterministic edge-case verification and schema validation suites for enterprise coding copilots.</p>
+          <span class="card-tag">Data Pod &bull; 99.8% Pass</span>
+        </article>
+
+        <article class="project-card">
+          <h4>Zero-Leakage Red-Teaming</h4>
+          <p>Adversarial prompt-injection stress testing executed inside NDA-isolated specialist environments.</p>
+          <span class="card-tag">Security &bull; Ready</span>
+        </article>
+      </div>
+    </section>
+
+    <aside class="right-panels">
+      <div class="side-card">
+        <h3>System Announcements</h3>
+        <div class="side-item">
+          <strong>Dental Diagnostics Pod Live</strong>
+          <p>B.D.S., M.I.D.A. clinical verification track is now open for multimodal batches.</p>
+        </div>
+        <div class="side-item">
+          <strong>Zero-Leakage NDA Protocol v2</strong>
+          <p>All client datasets remain strictly isolated from public LLM endpoints.</p>
+        </div>
+      </div>
+
+      <div class="side-card">
+        <h3>Active Domain Leads</h3>
+        <div class="pod-row"><span class="avatar">Rx</span><div><strong>@clinical-lead</strong><p>Pharmacy &amp; Drug Safety</p></div></div>
+        <div class="pod-row"><span class="avatar">BDS</span><div><strong>@dental-surgeon</strong><p>Maxillofacial &amp; OCR</p></div></div>
+        <div class="pod-row"><span class="avatar">CA</span><div><strong>@bfsi-audit</strong><p>Tax &amp; Regulatory Logic</p></div></div>
+        <div class="pod-row"><span class="avatar">DA</span><div><strong>@qa-architect</strong><p>Schema &amp; IAA Scoring</p></div></div>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

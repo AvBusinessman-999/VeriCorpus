@@ -114,3 +114,23 @@ Book.prototype.info = function() {
   const status = this.read ? "already read" : "not read yet";
   return `${this.title} by ${this.author}, ${this.pages} pages, ${status}`;
 }
+
+function createPodQuote(domain, ratePerRow) {
+  let internalMargin = 0.60; // Completely private via closure!
+
+  const calculateClientPrice = (rows) => rows * ratePerRow;
+  const calculateNetProfit = (rows) => calculateClientPrice(rows) * internalMargin;
+
+  // Only expose what you want public:
+  return { domain, calculateClientPrice, calculateNetProfit };
+}
+
+const rxQuote = createPodQuote('Clinical Pharmacy', 3.5);
+
+const qaController = (() => {
+  const minThreshold = 99.0; // Private constant
+  const checkBatch = (score) => score >= minThreshold;
+  return { checkBatch };
+})();
+
+qaController.checkBatch(99.4); // true

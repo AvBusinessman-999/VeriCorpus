@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeriCorpus | Specialist Onboarding Portal</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portal.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo-banner">
+      <h1>VeriCorpus</h1>
+      <p>Vetted AI Data &amp; Evaluation Pod</p>
+    </div>
+    <p class="credit">Enterprise AI Infrastructure &bull; India</p>
+  </aside>
+
+  <main class="form-panel">
+    <div class="intro-header">
+      <p>Apply once to join VeriCorpus's vetted specialist bench. Gain access to paid RLHF, Clinical, Finance, and Code evaluation sprints.</p>
+    </div>
+
+    <form id="signup-form" action="#" method="POST">
+      <div class="form-card">
+        <h2>Specialist Onboarding</h2>
+        <div class="inputs-grid">
+          <div class="input-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first_name" required>
+          </div>
+          <div class="input-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" required>
+          </div>
+          <div class="input-group">
+            <label for="email">Work Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="input-group">
+            <label for="phone">WhatsApp Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+          </div>
+          <div class="input-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm_password" minlength="8" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-footer">
+        <button type="submit" class="submit-btn">Create Specialist Account</button>
+        <p>Already vetted? <a href="#">Log in</a></p>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
